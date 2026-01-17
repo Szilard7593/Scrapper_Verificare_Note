@@ -71,7 +71,7 @@ def main():
             if grade:
                 print(f"GRADE FOUND: {grade}")
                 send_whatsapp(f"MAPAS nota sesiune scris: {grade}")
-                return 0  # Exit after finding the grade
+                time.sleep(60*60*2) # wait 2 hpurs, trying to avoind spam
             else:
                 print("No grade yet")
 
