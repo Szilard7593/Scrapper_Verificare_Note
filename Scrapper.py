@@ -54,8 +54,8 @@ def check_grade():
             cells = row.find_all('td')
 
             # Check cell [1] - nota sesiune scris (td.s13)
-            if len(cells) > 4 and cells[4].get_text(strip=True):
-                return cells[4].get_text(strip=True)
+            if len(cells) > 1 and cells[1].get_text(strip=True):
+                return cells[1].get_text(strip=True)
     return None
 
 
